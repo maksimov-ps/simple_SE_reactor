@@ -81,4 +81,4 @@ This code requires MATLAB and the following toolboxes:
 - Optimization Toolbox (optional, for parameter fitting)
 
 ## Contact
-For questions or issues, please contact the repository owner.
+For questions or issues, please contact Pavel Maksimov (maksimov.ps95@gmail.com).
