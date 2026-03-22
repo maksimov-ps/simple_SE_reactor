@@ -10,15 +10,14 @@ The repository consists of the following files:
 - **ODEsolver_Graaf.m**: Contains the main ODE solver function that calculates the time derivatives of the system's state variables.
 - **dss020.m**: Implements a discretization scheme for the first derivative (used for convection terms).
 - **dss044.m**: Implements a discretization scheme for the second derivative (used for diffusion terms).
-- **efficiency.m**: Calculates the efficiency factors for reactions and diffusion coefficients to account for the mass transfer limitations on the rate of the reactions. Calculation of efficiency factors is based 
-on https://doi.org/10.1016/S0009-2509(00)00194-9
+- **efficiency.m**: Calculates the efficiency factors for reactions and diffusion coefficients to account for the mass transfer limitations on the rate of the reactions. Calculation of efficiency factors is based on https://doi.org/10.1016/S0009-2509(00)00194-9
 - **equilibrium_calculation.m**: Computes equilibrium constants for the reactions.
-- **heat_transfer.m**: Calculates heat transfer coefficients and thermal conductivity. Calcualtion
-is based on https://doi.org/10.1016/0009-2509(77)80143-7 
-- **rate_calculation_Graaf.m**: Defines the reaction rate equations based on the Graaf et al. model.
-Rate equations are based on: https://doi.org/10.1016/0009-2509(88)85127-3
+- **heat_transfer.m**: Calculates heat transfer coefficients and thermal conductivity. Calculation is based on https://doi.org/10.1016/0009-2509(77)80143-7
+- **rate_calculation_Graaf.m**: Defines the reaction rate equations based on the Graaf et al. model. Rate equations are based on: https://doi.org/10.1016/0009-2509(88)85127-3
 - **RKS.m**: Computes fugacity coefficients using the Redlich-Kwong-Soave equation of state.
 - **viscosity.m**: Calculates the viscosity and thermal conductivity of the gas mixture.
+- **PSA_script.m** (optional): Implements the Pressure-Swing-Absorption (PSA) logic for the SE reactor model. This script simulates the cyclic operation of the reactor, including adsorption and desorption phases.
+- **SERP_PDE.m** (optional): Solves the system of partial differential equations (PDEs) for the SE reactor model, providing a detailed spatial and temporal resolution of the reactor's behavior.
 
 ## Key Components
 
@@ -62,6 +61,10 @@ The adsorption model includes:
 ### 6. **Physical Properties**
 - **viscosity.m**: Calculates gas mixture viscosity and thermal conductivity.
 - **RKS.m**: Computes fugacity coefficients using the Redlich-Kwong-Soave equation of state.
+
+### 7. **Optional Full Cycle Simulation**
+- **PSA_script.m**: Simulates the full cycle of the SE reactor model using the Pressure-Swing-Absorption (PSA) logic. This includes adsorption and desorption phases to enhance the reactor's performance.
+- **SERP_PDE.m**: Provides a detailed spatial and temporal resolution of the reactor's behavior by solving the system of PDEs for the SE reactor model.
 
 ## How to Use
 
