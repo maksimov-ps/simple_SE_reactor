@@ -65,6 +65,8 @@ The adsorption model includes:
 ### 7. **Optional Full Cycle Simulation**
 - **PSA_script.m**: Simulates the full cycle of the SE reactor model using the Pressure-Swing-Absorption (PSA) logic. This includes adsorption and desorption phases to enhance the reactor's performance.
 - **SERP_PDE.m**: Provides a detailed spatial and temporal resolution of the reactor's behavior by solving the system of PDEs for the SE reactor model.
+- **equlibria.m**: Calculates equilibrium constnats for the PSA_script.m
+- **jacobian_SERP.m**: Auxiliary file for numerical estimation of Jacobian for the ODE solver for PSA_script.m
 
 ## How to Use
 
